@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Test</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+
+<body>
+    <div style="text-align: center; font-size: 50px;margin-top: 20px;">Blood Test Report Analysis</div>
+    <div id="parent">
+        <div id="child1">
+            <form action="" onsubmit="validateForm()">
+                <div id="form">
+                    <div id="labels">
+                        <div>
+                            <label for="f">Female</label>
+                            <input type="radio" name="" id="f">
+                            <label for="m">Male</label>
+                            <input type="radio" name="" id="m">
+                        </div>
+                        <div>
+                            <h3>Investigation</h3>
+                        </div>
+                        <div class="test_name"><label for="">Hemoglobin</label></div>
+                        <div class="test_name"><label for="">Hemotrocracl</label></div>
+                        <div class="test_name"><label for="">Total RBC</label></div>
+                        <div class="test_name"><label for="">MCV</label></div>
+                        <div class="test_name"><label for="">WBC</label></div>
+                        <!-- <div class="test_name"><label for="">MCHC</label></div> -->
+                        <div class="test_name"><label for="">Platlets</label></div>
+                    </div>
+                    <div id="input">
+                        <div style="margin-left: 20px;">
+                            <h3>Value</h3>
+                        </div>
+                        <div class="test_input"><input type="text" name="" id="Hemoglobin">gm/dl</div>
+                        <div class="test_input"><input type="text" name="" id="Hemotrocracl">milions/Cumm</div>
+                        <div class="test_input"><input type="text" name="" id="RBC">FL</div>
+                        <div class="test_input"><input type="text" name="" id="MCV">Pg</div>
+                        <div class="test_input"><input type="text" name="" id="WBC">cells/mm3</div>
+                        <!-- <div class="test_input"><input type="text" name="" id="">Cells/Cumm</div> -->
+                        <div class="test_input"><input type="text" name="" id="Platlets">Lakhs/Cumm</div>
+                        <!-- <div class="test_input"><input type="button" value="submit" id="submit"></div> -->
+                        <div class="test_input"><button id="submit" style="width: 200px; height: 25px;">Submit</button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="child2">
+            <form action="">
+                <div id="result">
+                    <div id="result_div1">
+                        <div style="margin-left: 40px; color: white;">
+                            <h3>Result</h3>
+                        </div>
+                    </div>
+                    <div id="result_div2">
+                        <div>
+                            <p id="resullt_Hemoglobin">Normal</p>
+                        </div>
+                        <div>
+                            <p id="result_Hemotrocracl">Normal</p>
+                        </div>
+                        <div>
+                            <p id="result_RBC">Anemia, Deficiency of Vitamins B12, iron </p>
+                        </div>
+                        <div>
+                            <p id="result_MCV">Normal</p>
+                        </div>
+                        <div>
+                            <p id="result_MCH">Normal</p>
+                        </div>
+                        <div>
+                            <p id="result_Platlets">Low Platlets,you need to eat green vegetable,papaya leaf</p>
+                        </div>
+                        <div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    var male = document.getElementById("m");
+    var female = document.getElementById("f");
+    var hemoglobin = document.getElementById("Hemoglobin");
+    var hemotrocracl = document.getElementById("Hemotrocracl");
+    var rbc = document.getElementById("RBC");
+    var mcv = document.getElementById("MCV");
+    var mch = document.getElementById("MCH");
+    var platlets = document.getElementById("Platlets");
+    var result = 10;
+    
+    function validateForm(){
+  if(hemotrocracl.value=='' || rbc.value=='' || hemoglobin.value=='' || (male.checked==false && female.checked==false) || mcv.value=='' || mch.value=='' || platlets.value==''  ){
+    alert("All fields are required!");
+    document.getElementById("submit").removeEventListener("click", countBmi);
+  }else{
+    //countBmi();
+  }
+}
+document.getElementById("submit").addEventListener("click", validadteForm);
+
+function Blood_result() {
+    if (hemoglobin<10) {
+        document.getElementById("resullt_Hemoglobin").innerHTML="Normal";
+    } else {
+        document.getElementById("resullt_Hemoglobin").innerHTML="best";
+    }
+}
+</script>
+
+</html>

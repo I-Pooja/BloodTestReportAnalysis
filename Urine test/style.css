@@ -1,0 +1,90 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #c6dff5;
+    font-size: 20px;
+  }
+  #parent {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #child1 {
+      /* border: 1px solid; */
+      height: 140vh ;
+      width: 750px;
+      background-position: fixed;
+      background: linear-gradient(to right,#289df6 25%,#fff 10%);
+      border-radius: 30px;
+      margin-top: 30px;
+  }
+  #child2 {
+    margin-top: 30px;
+  }
+
+  .urine_test_div1 {
+    /* border: 1px solid; */
+    height: 38vh;
+    width: 90vh;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+  .urine_test_name {
+    text-align: center; 
+    font-size: 30px;
+    color: #289df6; 
+  }
+  #Urine_test_physical {
+    /* border: 1px solid; */
+    width: 100%;
+    display: flex;
+  }
+  .physical {
+    /* border: 1px solid; */
+    height: 30vh;
+    width: 30vh;
+  }
+  .physical div {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .physical div input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+    width: 200px;
+    margin-left: -30px;
+    font-size: 15px;
+  }
+  #result {
+    /* border: 1px solid; */
+    height: 80vh;
+    width: 400px;
+    background: linear-gradient(135deg,#289df6 20%,#fff 10%);
+    border-radius: 30px;
+    display: flex;
+  }
+  #result_div1 {
+    /* border: 1px solid; */
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+  }
+  #result_div2 {
+    /* border: 1px solid; */
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+  .test_input input {
+    border: none;
+    height: 30px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 300px;
+    background-color: #289df6;
+    color: white;
+  }

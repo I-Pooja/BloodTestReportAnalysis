@@ -1,0 +1,98 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #c6dff5;
+  }
+  #parent {
+    width: 200vh;
+  }
+  #child1 {
+      /* border: 1px solid; */
+      height: 50vh ;
+      width: 750px;
+      background-position: fixed;
+      background: linear-gradient(to right,#289df6 25%,#fff 10%);
+      border-radius: 30px;
+      margin-top: 30px;
+      display: flex;
+  }
+  #child2 {
+    margin-top: 30px;
+  }
+  #form {
+      display: flex;
+  }
+   #labels {
+      /* border: 1px solid; */
+      width: 200px;
+      margin-left: 10px;
+      margin-top: 60px;
+      height: 80vh;
+      color: white;
+  }
+  #input {
+      /* border: 1px solid; */
+      width: 500px;
+      height: 80vh;
+      margin-top: 60px;
+      margin-left: 50px;
+  }
+  
+  .test_name {
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .test_input {
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  
+  .test_input input {
+    height: 25px;
+    width: 200px;
+    /* border-radius: 10px; */
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+  }
+  #submit {
+    border: none;
+    background-color: #289df6;
+    color: white;
+  }
+  
+  #f {
+    height: 15px;
+    width: 15px;
+  }
+  #m {
+    height: 15px;
+    width: 15px;
+  }
+  
+  #result {
+    /* border: 1px solid; */
+    height: 50vh;
+    width: 400px;
+    background: linear-gradient(135deg,#289df6 20%,#fff 10%);
+    border-radius: 30px;
+    display: flex;
+  }
+  #result_div1 {
+    /* border: 1px solid; */
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+  }
+  #result_div2 {
+    /* border: 1px solid; */
+    margin-left: 50px;
+    margin-top: 70px;
+  }

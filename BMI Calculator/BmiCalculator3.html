@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style2.css">
+    <script src="./Script2.js"></script>
+</head>
+<body>
+    <div class="main" style="width: 100%">
+        <header class="htext-center bg-primary pt-5 pb-5 mb-5">
+          <h1 class="text-white text-uppercase">Body Mass Index Results</h1>
+          <p class="text-white"><sup><b>Frank&rsquo;s</b> Mega Project</sup></p>
+        </header>
+        
+        <div class="container form">
+          <input id="weight" type="number" placeholder="Enter your weight in pounds" max="1000" min="0">
+          <input id="height" type="number" placeholder="Enter your height in inches" max="1000" min="0">
+          <button id="check">Check</button>
+        </div>
+            
+        <div class="body">
+          <div id="guage">
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="" height="" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 3486.3 3486.3"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+             <defs>
+              <!-- <style type="text/css">
+               <![CDATA[
+                .fil1 {fill:none}
+                .fil0 {fill:url(#id0)}
+               ]]>
+              </style> -->
+              <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="-3.41" y1="1744.6" x2="3550.74" y2="1744.59">
+               <stop offset="0.1" style="stop-opacity:1; stop-color:red"/>
+      <!--           <stop offset="0.1" style="stop-opacity:1; stop-color:#FFE600"/> -->
+               <stop offset="0.18" style="stop-opacity:1; stop-color:lime"/>
+               <stop offset="0.4" style="stop-opacity:1; stop-color:#FFE600"/>
+               <stop offset="0.8" style="stop-opacity:1; stop-color:red"/>
+              </linearGradient>
+             </defs>
+             <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"/>
+              <path class="fil0" d="M1761.22 0c134.46,1.5 265.26,18.17 390.78,48.44l-64.38 240.28c-104.96,-24.86 -214.18,-38.66 -326.4,-40.11l0 -248.6zm429.14 58.17c129.18,34.3 252.46,83.03 368.03,144.39l-124.4 215.47c-96.9,-50.69 -200.05,-91.06 -307.98,-119.68l64.35 -240.17zm402.78 163.34c116.57,65.32 224.89,143.62 322.97,232.97l-176.02 176.02c-82.65,-74.14 -173.61,-139.18 -271.29,-193.62l124.34 -215.36zm351.94 259.96c97.2,92.64 183.71,196.4 257.52,309.22l-215.76 124.57c-62.73,-94.02 -135.8,-180.55 -217.62,-257.92l175.87 -175.87zm278.84 342.6c71.4,114.75 129.84,238.41 173.3,368.91l-240.79 64.52c-37.61,-109.27 -87.47,-212.84 -148.02,-309.01l215.51 -124.42zm185.36 406.65c39.92,129.74 65.06,265.94 73.6,406.63l-249.2 0c-8.39,-118.4 -30.46,-233.01 -64.81,-342.21l240.41 -64.42zm-1687.63 -982.11c-112.21,1.47 -221.45,15.23 -326.4,40.12l-64.38 -240.28c125.5,-30.3 256.32,-46.94 390.78,-48.44l0 248.6zm-364.79 49.74c-107.93,28.64 -211.08,68.99 -307.98,119.69l-124.4 -215.47c115.56,-61.37 238.86,-110.07 368.03,-144.39l64.35 240.17zm-342.79 138.53c-97.67,54.45 -188.65,119.48 -271.29,193.62l-176.01 -176.01c98.07,-89.36 206.41,-167.63 322.97,-232.97l124.34 215.36zm-300.41 220.47c-81.81,77.38 -154.9,163.9 -217.62,257.92l-215.76 -124.57c73.8,-112.82 160.32,-216.56 257.51,-309.22l175.87 175.87zm-239.19 291.16c-60.54,96.17 -110.42,199.74 -148.02,309.01l-240.79 -64.52c43.45,-130.51 101.9,-254.16 173.3,-368.92l215.51 124.42zm-160.46 346.64c-34.34,109.2 -56.42,223.81 -64.81,342.21l-249.2 0c8.54,-140.69 33.68,-276.89 73.6,-406.63l240.41 64.42z"/>
+              <circle class="fil1" cx="1743.15" cy="1743.15" r="1743.15"/>
+              <circle class="fil1" cx="1743.15" cy="1743.15" r="1498.86"/>
+             </g>
+            </svg>
+            <div id="spinner">
+              <div id="pointer"></div>
+            </div>
+            <h2 class="value">BMI</h2>
+            <p class="small-text">status</p>
+          </div>
+      
+          <!-- <div class="text-center">
+            <form >
+              <input type="number" max="164" id="textfield"/>
+              <button id="button">Check</button>
+            </form>
+          </div> -->
+      
+          <div class="container">
+            <table class="table">
+              <thead>
+                 <tr>
+                  <th>PROPERTY</th>
+                  <th>VALUE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Weight</td>
+                  <td>300kg</td>
+                </tr>
+                <tr>
+                  <td>Height</td>
+                  <td>300m</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="button info-button">Info <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -4px; margin-left: 3px;">
+        <g id="24 / notifications / question-circle">
+        <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM12.0003 16.9983C12.5528 16.9983 13.0007 16.5506 13.0007 15.9983C13.0007 15.4461 12.5528 14.9983 12.0003 14.9983C11.4479 14.9983 11 15.4461 11 15.9983C11 16.5506 11.4479 16.9983 12.0003 16.9983ZM11 14H13C13 13.2016 13.1254 13.0553 13.9472 12.6444C15.3754 11.9303 16 11.2016 16 9.5C16 7.32063 14.2843 6 12 6C9.79086 6 8 7.79086 8 10H10C10 8.89543 10.8954 8 12 8C13.2772 8 14 8.55641 14 9.5C14 10.2984 13.8746 10.4447 13.0528 10.8556C11.6246 11.5697 11 12.2984 11 14Z" fill="white"/></g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      
+      <div class="aside">  
+         <div class="container body scrollable fixed info-page">
+           <div class="button close-button"><b>close</b><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -5px; margin-left: 3px;">
+      <g id="24 / basic / circle-x">
+      <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM8.70711 16.7071L12 13.4142L15.2929 16.7071L16.7071 15.2929L13.4142 12L16.7071 8.70711L15.2929 7.29289L12 10.5858L8.70711 7.29289L7.29289 8.70711L10.5858 12L7.29289 15.2929L8.70711 16.7071Z" fill="white"/>
+      </g>
+      </svg>
+      </div>
+           <article class="content">
+             <h1>What is the body mass index?</h1>
+             <br>
+             <p>The BMI is an attempt to quantify the amount of tissue mass (muscle, fat, and bone) in an individual and the categorize that person as underweight, normal weight, overweight or obese based on that value.
+            BMI is a screening tool that can indicate whether a person is underweight or if they have a healthy weight, excess weight, or obesity. If a person's BMI is outside of the healthy range, their health risks may increase significantly.
+            The body mass index is universally expressed in kg/m2, resulting from mass in kilograms and height in meters. The formula is stated as weight of the individual in kilograms divided by the height2 of the individual in meters. 
+            When using imperial units, the formula is: BMI = lbs x 703/in2
+            </p>
+            <br>
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/BMI_chart.svg/2000px-BMI_chart.svg.png" alt="body mass index graph" class="responsive"/>
+             <h1>Categories of BMI values</h1>
+             <br>
+             <p>A BMI of less than 18.5 indicates that you are underweight, so you may need to put on some weight. You are recommended to ask your doctor or a dietitian for advice.
+      
+      A BMI of 18.5-24.9 indicates that you are at a healthy weight for your height. By maintaining a healthy weight, you lower your risk of developing serious health problems.
+      
+      A BMI of 25-29.9 indicates that you are slightly overweight. You may be advised to lose some weight for health reasons. You are recommended to talk to your doctor or a dietitian for advice.
+      
+      A BMI of over 30 indicates that you are heavily overweight. Your health may be at risk if you do not lose weight. You are recommended to talk to your doctor or a dietitian for advice.</p>
+             <br>
+             <br>
+             <table>
+               <thead>
+                 <tr >
+                   <th>CATEGORY</th>
+                   <th colspan="2">BMI (Kg/m<sup>2</sup>)</th>
+                   <th colspan="2">BMI PRIME</th>
+                 </tr>
+                 <tr>
+                   <th></th>
+                   <th>from</th>
+                   <th>to</th>
+                   <th>from</th>
+                   <th>to</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <td>Very severely underweight </td>
+                   <td>-</td>
+                   <td>15</td>
+                   <td>-</td>
+                   <td>0.6</td>
+                 </tr>
+                 <tr>
+                   <td>Severely underweight </td>
+                   <td>15</td>
+                   <td>16</td>
+                   <td>0.6</td>
+                   <td>0.64</td>
+                 </tr>
+                 <tr>
+                   <td>Underweight </td>
+                   <td>16</td>
+                   <td>18.5</td>
+                   <td>0.6</td>
+                   <td>0.74</td>
+                 </tr>
+                 <tr>
+                   <td>Normal (Healthy Weight)</td>
+                   <td>18.5</td>
+                   <td>25</td>
+                   <td>0.74</td>
+                   <td>1</td>
+                 </tr>
+                 <tr>
+                   <td>Overweight</td>
+                   <td>25</td>
+                   <td>30</td>
+                   <td>1</td>
+                   <td>1.2</td>
+                 </tr>
+                 <tr>
+                   <td>Obese Class I (Moderately obese) </td>
+                   <td>30</td>
+                   <td>35</td>
+                   <td>1.2</td>
+                   <td>1.4</td>
+                 </tr>
+                 <tr>
+                   <td>Obese Class II (Severely obese)</td>
+                   <td>35</td>
+                   <td>40</td>
+                   <td>1.4</td>
+                   <td>1.6</td>
+                 </tr>
+                 <tr>
+                   <td>Obese Class III (Very severely obese)</td>
+                   <td>40</td>
+                   <td>45</td>
+                   <td>1.6</td>
+                   <td>1.8</td>
+                 </tr>
+                 <tr>
+                   <td>Obese Class IV (Morbidly Obese) </td>
+                   <td>45</td>
+                   <td>50</td>
+                   <td>1.8</td>
+                   <td>2</td>
+                 </tr>
+                 <tr>
+                   <td>Obese Class V (Super Obese) </td>
+                   <td>50</td>
+                   <td>60</td>
+                   <td>2</td>
+                   <td>2.4</td>
+                 </tr>
+                 <tr>
+                   <td>Obese Class VI (Hyper Obese) </td>
+                   <td>60</td>
+                   <td>-</td>
+                   <td>2.4</td>
+                   <td>-</td>
+                 </tr>
+               </tbody>
+             </table>
+             <br><br>
+             <h1>The BMI values for children</h1>
+             <br>
+             <p>However, measuring BMI in children and teens is slightly different. Girls and boys develop at different rates and have different amounts of body fat at different ages. For this reason, BMI measurements during childhood and adolescence take age and sex into consideration.<br><br>
+      It is calculated in the same way as for adults, but then compared to typical values for other children of the same age. Instead of comparison against fixed thresholds for underweight and overweight, the BMI is compared against the percentile for children of the same sex and age.<br><br>
+      A BMI that is less than the 5th percentile is considered underweight and above the 95th percentile is considered obese. Children with a BMI between the 85th and 95th percentile are considered to be overweight. BMI is used differently for children. It is calculated in the same way as for adults, but then compared to typical values for other children of the same age. Instead of comparison against fixed thresholds for underweight and overweight, the BMI is compared against the percentile for children of the same sex and age.<br><br>
+               A BMI that is less than the 5th percentile is considered underweight and above the 95th percentile is considered obese. Children with a BMI between the 85th and 95th percentile are considered to be overweight.<br><br>
+      Doctors and other health professionals do not categorize children by healthy weight ranges because:
+        <ul>
+          <tab><li>they change with each month of age</li>
+          <li>male and female body types change at different rates</li>
+          <li>they change as the child grows taller</li>
+        </ul><br><br>
+      Doctors calculate BMI for children and teens in the same way as they do for adults, by measuring height and weight. Then they locate the BMI number and person's age on a sex-specific BMI-for-age chart. This will indicate whether the child is within a healthy range.
+      </p>
+             <br>
+             <h1>BMI chart for girls</h1>
+             <br><br>
+             <img class="responsive" src="https://uploads-cdn.omnicalculator.com/images/Al_BMIChartGirls.jpg" alt="bmi chart for girls">
+              <h1>BMI chart for boys</h1>
+             <br><br>
+             <img class="responsive" src="https://uploads-cdn.omnicalculator.com/images/Al_BMIChartBoys.jpg" alt="bmi chart for boys">
+           </article>
+         </div>
+      </div>
+</body>
+</html>

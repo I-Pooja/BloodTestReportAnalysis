@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+
+<body>
+    <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex <b>C</b>alculator</h3>
+        <form class="form" id="form" onsubmit="return validateForm()">
+            <div class="row-one">
+                <input type="text" class="text-input" id="age" autocomplete="off" required />
+                <p class="text">Age</p>
+                <label class="container">
+                    <input type="radio" name="radio" id="f">
+                    <p class="text">Female</p>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="radio" id="m">
+                    <p class="text">Male</p>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="row-two">
+                <input type="text" class="text-input" id="height" autocomplete="off" required>
+                <p class="text">Height (cm)</p>
+                <input type="text" class="text-input" id="weight" autocomplete="off" required>
+                <p class="text">Weight (kg)</p>
+            </div>
+            <button type="button" id="submit">Submit</button>
+        </form>
+        <div>
+            <p id="p1"></p>
+          </div>
+
+    <div id="BmiTable">
+        <div>
+            <table id="BmiInfoTable">
+                <tr id="tr1">
+                    <th>CDC Defination</th>
+                    <th colspan="3">NHANES II DEfination for BMI</th>
+                </tr>
+                <tr id="tr2">
+                    <th>Men & Women</th>
+                    <th>Men</th>
+                    <th>Women</th>
+                    <th>Status</th>
+                </tr>
+                <tr class="tr1" style="color: rgb(0, 0, 255);">
+                    <td>Below 18.5</td>
+                    <td><20.7</td>
+                    <td><19.1</td>
+                    <td>Underweight</td>
+                </tr>
+                <tr class="tr1" style="color: #43a616;">
+                    <td>18.5-24.9</td>
+                    <td>20.7-26.4</td>
+                    <td>19.1-25.8</td>
+                    <td>Normal</td>
+                </tr>
+                <tr class="tr1" style="color: #f5ce35;">
+                    <td>n/a</td>
+                    <td>26.4-27.8</td>
+                    <td>25.8-27.3</td>
+                    <td>Marginally Overweight</td>
+                </tr>
+                <tr class="tr1" style="color: #ef620e;">
+                    <td>25-29.9</td>
+                    <td>27.8-31.1</td>
+                    <td>27.3-32.2</td>
+                    <td>Marginally Overweight</td>
+                </tr>
+                <tr class="tr1" style="color: #fe0c0c;">
+                    <td>30 & Above</td>
+                    <td>>31.1</td>
+                    <td>>32.3</td>
+                    <td>Obese</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./Script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, Arial;
+    transition: all 0.3s ease-out;
+  }
+  body {
+    overflow-x: hidden;
+  /*   overflow-y: hidden; */
+  }
+  header {
+    padding: 50px 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #2050ff;
+    color: white;
+  }
+  thead tr {
+    font-size: 14px;
+    text-align: center;
+    background-color: #aaa;
+    text-align: left;
+  }
+  tbody{ font-size: 16px; }
+  td, th { padding: 20px; } 
+  td { border-bottom: .2px solid #999 }
+  
+  /* Set Styles For reusable classes */
+  .body {padding: 0px 10px 0px 10px}
+  .container {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .table {
+    width: 100%;
+    margin-bottom: 50px;
+    overflow: hidden;
+    background-color: #eee;
+    border-collapse: collapse;
+    color: #333;
+  }
+  .button {
+    background-color: #2050ff;
+    text-align: center;
+    color: white;
+    width: 150px;
+    padding: 15px 30px;
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: 0px 8px 8px -2px #c2c2c2;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #4070ff;
+  }
+  .button:active{
+    background-color: #2030ff;
+  }
+  .responsive {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .scrollable{ overflow: hidden; overflow-y: auto }
+  .aside { position: fixed; top: 0; left: -500px }
+  .info-page {
+    font-weight: lighter;
+    line-height: 25px;
+    text-align: justify;
+    height: 100vh; 
+    width: 100vw; 
+    background-color: #e5e5e5;
+    margin: 0;
+    padding-top: 50px;
+  }
+  .close-button {
+    background-color: red;
+    padding: 10px;
+  }
+  .close-button:hover { background-color: #dd0000 }
+  .form { margin-bottom: 50px }
+  .form input, .form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  /* Style the meter */
+  #guage {
+    position: relative;
+    margin: auto;
+    margin-bottom: -150px;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  #guage svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #guage .value {
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+  }
+  #spinner {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    transition: transform 1.5s ease-in-out;
+    transform: rotate(45deg);
+  }
+  #pointer {
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 12px solid red;
+    position: absolute;
+    z-index: 20;
+    top: 105px;
+    left: 5px;
+    width: 0px;
+  }
+  #guage .small-text {
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    top: 95px;
+  }
+  
